@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module"src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app-compat.js"></script>
+  <script type="module"src="https://www.gstatic.com/firebasejs/9.9.4/firebase-database-compat.js"></script>
+  <script type="module"src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth-compat.js"></script>
+  <script type="module"src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="module"src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+  <script type="module"src="script.js"></script>
+  <style>
+    #userinfo{
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      font-size: 14px;
+    }
+    #webHeader{
+      position: fixed;
+      bottom: 8px;
+      right: 16px;
+      font-size: 18px;
+    }
+  </style>
+<div id="userinfo"></div>
+<div id="webHeader">
+  <h1>
+    Twitter
+    <p style="font-size:14px;">By: Justin Bell</p>
+  </h1>
+  <p2 style="text-align: center"> Express yourself ™</p2>
+</div>
+</head>
+
+
+<div id="posts"></div>
+
+
+<div class='container'>
+   <!--"Login button"-->
+  <div class="button-login">
+    <button id="clogin" class='button -dark center'>Login</button>
+  </div>
+
+  <div class="button-logout">
+    <button id="clogout" class='button -dark'>Logout</button>
+  </div>
+
+ <!--"Tweet button"-->
+  <div class="button-tweet">
+    <button id="ctweet" class='button -blue center'>Tweet</button>
+  </div>
+
+  <!--Onclick "Tweet button" will display a textbox-->
+  <div class="message">
+    <input id="newtweet" placeholder="Express yourself..."> </input>
+    <button id="stweet" class='button -blue center'>tweet</button>
+  </div>
+</div>
